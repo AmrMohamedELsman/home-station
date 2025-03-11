@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home station Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+
+</head>
+<body>
+    <section lang="en" class="landing" id="home">
+        <div class="contener">
+            <div class="setingIcon" id="setingIcon">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="contact">
+                <p>follow us</p>
+                <div class="pox">
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <a href="https://www.facebook.com/homestationelite" target="_blank">facebook page</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-instagram"></i>
+                        <a href="https://www.instagram.com/homestation.elite" target="_blank">instagram page</a>
+                    </div>
+                </div>
+            </div>
+            <div class="imglanding">
+                <img src="WhatsApp Image 2025-02-03 at 06.06.39_013ae7ad.jpg" loading="lazy">
+            </div>
+            <div class="gestcommentbtn">
+                <button class="btn btn-warning" >Guest Comments</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="gestformconteaner">
+        <div class="gestform">
+            <h3>We would love to hear your feedback! Please leave a comment</h3>
+            <input type="text"  id="gestname" placeholder="name">
+            <input type="number" id="gestnum" placeholder="phone number">
+            <div class="mb-3">
+                <textarea id="comment" class="form-control"  placeholder="Please enter your comment here" ></textarea>
+            </div>
+            <button id="supbtn" class="btn btn-warning">supmet</button>
+            <button id="backbtngect" class="btn btn-danger">back to menu</button>
+        </div>
+    </section>
+    <section class="mainSection" id="mainSections">
+        <div class="gategore">
+            <div class="catgoreNav">
+                <div class="navbar-container m-0">
+                    <i class="fa-solid fa-backward left-btn"></i>
+                    <div class="navbar p-0 mt-1">
+                        <ul class="nav-links mt-2">
+                            <li><a href="#Breakfast">Breakfast</a></li>
+                            <li><a href="#Appetizers">Appetizers</a></li>
+                            <li><a href="#soup">Soup</a></li>
+                            <li><a href="#Salad">Salad</a></li>
+                            <li><a href="#Sandwhiches">Sandwhiches</a></li>
+                            <li><a href="#Burgers">Burgers</a></li>
+                            <li><a href="#Hawawshi">Hawawshi</a></li>
+                            <li><a href="#Pasta">Pasta</a></li>
+                            <li><a href="#Pizza">Pizza</a></li>
+                            <li><a href="#MainDishes">MainDishes</a></li>
+                            <li><a href="#HotDrinks">Hot Drinks</a></li>
+                            <li><a href="#Coffee">Coffee</a></li>
+                            <li><a href="#Milkshake">Milkshake</a></li>
+                            <li><a href="#IcedCoffee">Iced Coffee</a></li>
+                            <li><a href="#Frappuccino">Frappuccino</a></li>
+                            <li><a href="#freshJuice">fresh Juice</a></li>
+                            <li><a href="#Smootheis">Smootheis</a></li>
+                            <li><a href="#Yoghurt">Yoghurt</a></li>
+                            <li><a href="#cocbreckFast">Cocktils</a></li>
+                            <li><a href="#Mojito">Mojito</a></li>
+                            <li><a href="#Desserts">Desserts</a></li>
+                            <li><a href="#softDrinks">softDrinks</a></li>
+                            
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-forward right-btn" id="rightArow"></i>
+                </div>
+            </div>
+        </div>    
+        <section class="breckFast" id="Breakfast">
+            
+            <div class="conteaner">
+                <div class="heading">
+                    <h3>Breakfast</h3>
+                </div>
+                <div class="breakfastCard" id="breakfastCard">
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <section class="Appetizers" id="Appetizers">
+            <div class="heading">
+                <h3>Appetizers</h3>
+            </div>
+            <div class="breakfastCard" id="AppetizersConte">
+               
+            </div>
+               
+        </section>
+        <section class="soup" id="soup">
+            <div class="heading">
+                <h3>Soup</h3>
+            </div>
+            <div class="breakfastCard">
+                
+                
+            </div>
+        </section>
+      
+        <section class="Salad" id="Salad">
+            <div class="heading">
+                <h3>Salad</h3>
+            </div>
+            <div class="breakfastCard">
+               
+                
+                
+           </div>
+        </section>
+       
+        <section class="Sandwhiches" id="Sandwhiches">
+            <div class="heading">
+                <h3>Sandwhiches</h3>
+            </div>
+            <div class="breakfastCard">
+                
+                   
+            </div>
+        </section>
+
+        <section class="Burgers" id="Burgers">
+            <div class="heading">
+                <h3>Burgers</h3>
+            </div>
+            <div class="breakfastCard">
+               
+
+            </div>
+        </section>            
+
+        <section class="Hawawshi" id="Hawawshi">
+            <div class="heading">
+                <h3>Hawawshi</h3>
+            </div>
+            <div class="breakfastCard">
+                
+            </div>
+        </section>            
+
+        <section class="Pasta" id="Pasta">
+            <div class="heading">
+                <h3>Pasta</h3>
+            </div>
+            <div class="breakfastCard">
+                
+            </div>
+        </section> 
+        <section class="Pizza" id="Pizza">
+            <div class="heading">
+                <h3>Pizza</h3>
+            </div>
+            <div class="breakfastCard">
+            </div>     
+        </section>
+
+        <section class="MainDishes" id="MainDishes">
+            <div class="heading">
+                <h3>Main Dishes</h3>
+            </div>
+            <div class="breakfastCard">
+                    <h4>Chicken</h4>                
+            </div>
+        </section> 
+        
+        
+        <section class="HotDrinks" id="HotDrinks">
+            
+            <div class="heading">
+                <h3>Hot Drinks</h3>
+            </div>
+            <div class="breakfastCard">
+            </div>    
+        </section> 
+        
+        <section class="Coffee" id="Coffee">
+           
+            <div class="heading">
+                <h3>Coffee</h3>
+            </div>
+            <div class="breakfastCard">
+            </div>
+        </section>  
+        
+        <section class="Milkshake" id="Milkshake">
+          
+            <div class="heading">
+                <h3>Milkshake</h3>
+            </div>
+            <div class="breakfastCard">
+               
+            </div>
+        </section>  
+        
+        <section class="IcedCoffee" id="IcedCoffee">
+           
+            <div class="heading">
+                <h3>Iced Coffee</h3>
+            </div>
+            <div class="breakfastCard">
+               
+            </div>
+        </section>   
+        
+        <section class="Frappuccino" id="Frappuccino">
+           
+            <div class="heading">
+                <h3>Frappuccino</h3>
+            </div>
+            <div class="breakfastCard">
+               
+            </div>
+        </section>  
+        
+        <section class="freshJuice" id="freshJuice">
+            
+            <div class="heading">
+                <h3>fresh Juice</h3>
+            </div>
+            <div class="breakfastCard">
+               
+            </div>
+        </section> 
+        
+        <section class="Smootheis" id="Smootheis">
+           
+            <div class="heading">
+                <h3>Smootheis</h3>
+            </div>
+            <div class="breakfastCard">
+               
+            </div>
+        </section>  
+        
+        <section class="Yoghurt" id="Yoghurt">
+           
+            <div class="heading">
+                <h3>Yoghurt</h3>
+            </div>
+            <div class="breakfastCard">
+               
+            </div>
+        </section>     
+        
+        <section class="cocbreckFast" id="cocbreckFast">
+            <div class="heading">
+                <h3>Cocktils</h3>
+            </div>
+            <div class="breakfastCard">
+                
+            </div>
+        </section>
+        
+        <section class="mojbreckFast" id="Mojito">
+            <div class="heading">
+                <h3>Mojito</h3>
+            </div>
+            <div class="breakfastCard">
+               
+            </div>
+        </section>  
+
+        <section class="Desserts" id="Desserts">
+            
+            <div class="heading">
+                <h3>Desserts</h3>
+            </div>
+            <div class="breakfastCard">
+               
+            </div>
+        </section>            
+        
+        <section class="softDrinks" id="softDrinks">
+           
+            <div class="heading">
+                <h3>Soft Drinks</h3>
+            </div>
+            <div class="breakfastCard">
+               
+                
+            </div>
+        </section>       
+        <footer>
+            <div lang="en" class="myinfo">
+                <h3>Created by : Amr Elsman</h3>
+                <div class="iconinfo">
+                    <h4>contact us</h4>
+                    <a href="https://www.linkedin.com/in/amr-elsman-230528268/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me/01287276427" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:elsmana18@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <div class="cestpagecont">
+        <h3>all Guest Comments</h3>
+        <button id="backtomenu" class="btn mb-2  btn-sm btn-outline-primary">back to home </button>
+        <div id="commentsList" class="container commentsList mt-3"></div>
+    </div>
+    
+
+    <section class="setingpage">
+        <div class="container py-5 bg-secondary-subtle allpageseting">
+            <h2 class="text-center mb-4">home station product</h2>
+            <button id="back" class="btn mb-2  btn-sm btn-outline-primary">back to home </button>
+            <button id="commentpage" class="btn mb-2 ms-5 btn-sm btn-outline-danger">comment page </button>
+            <form id="productForm">
+                <div class="mb-3">
+                    <input type="text" id="name" class="form-control" placeholder="name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="number" id="price" class="form-control"  placeholder="price" required>
+                </div>
+                <div class="mb-3">
+                    <textarea id="description" class="form-control"  placeholder="information" ></textarea>
+                </div>
+               
+                <!-- اختيار ورفع الصورة -->
+                <input type="file" id="image">
+            
+                <!-- عرض الصورة بعد الرفع -->
+                <img id="previewImage" style="display:none; width: 100px; height: 100px;">
+        
+                
+                <div class="mb-3 mt-3 formselect">
+                    <label class="form-label">chose catgore</label>
+                    <select id="category" class="form-select">
+                        <option>Breakfast</option>
+                        <option>Appetizers</option>
+                        <option>Salad</option>
+                        <option>Soup</option>
+                        <option>Sandwhiches</option>
+                        <option>Burgers</option>
+                        <option>Hawawshi</option>
+                        <option>Pasta</option>
+                        <option>Pizza</option>
+                        <option>Main Dishes</option>
+                        <option>Hot Drinks</option>
+                        <option>Coffee</option>
+                        <option>Milkshake</option>
+                        <option>Iced Coffee</option>
+                        <option>Frappuccino</option>
+                        <option>fresh Juice</option>
+                        <option>Smootheis</option>
+                        <option>Yoghurt</option>
+                        <option>Cocktils</option>
+                        <option>Mojito</option>
+                        <option>Desserts</option>
+                        <option>Soft Drinks</option>
+                    </select>
+                </div>
+                <button id="submitButton" class="btn btn-outline-primary mt-3">add product</button>
+            </form>
+            <h3 class="mt-4">product</h3>
+            <div class="displayFromSetingPage">
+                <div class="mb-3 mt-3 formselect">
+                    <label class="form-label">chose catgore to display</label>
+                    <select id="categorys" class="form-select">
+                        <option>Breakfast</option>
+                        <option>Appetizers</option>
+                        <option>Salad</option>
+                        <option>Soup</option>
+                        <option>Sandwhiches</option>
+                        <option>Burgers</option>
+                        <option>Hawawshi</option>
+                        <option>Pasta</option>
+                        <option>Pizza</option>
+                        <option>Main Dishes</option>
+                        <option>Hot Drinks</option>
+                        <option>Coffee</option>
+                        <option>Milkshake</option>
+                        <option>Iced Coffee</option>
+                        <option>Frappuccino</option>
+                        <option>fresh Juice</option>
+                        <option>Smootheis</option>
+                        <option>Yoghurt</option>
+                        <option>Cocktils</option>
+                        <option>Mojito</option>
+                        <option>Desserts</option>
+                        <option>Soft Drinks</option>
+                    </select>
+                </div>
+            </div>    
+            <ul id="productList" class="list-group mt-3"></ul>
+            
+            <div class="scrollToTop">↑</div>
+        </div> 
+    </section>
+
+    
+    <div id="loginModal">
+        <div class="modal-content">
+            <h3>Admin Login</h3>
+            <input type="text" id="adminUsername" placeholder="Username">
+            <input type="password" id="adminPassword" placeholder="Password">
+            <button id="loginButton" class="btn btn-warning">Login</button>
+            <button id="closeModal" class="btn btn-danger">Close</button>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

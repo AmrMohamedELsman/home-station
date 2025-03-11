@@ -1,0 +1,696 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+
+
+
+.landing .imglanding img{
+    width: 100%;
+    height: 100vh;
+    direction: ltr;
+}
+
+@media (max-width : 320px) {
+    .landing .imglanding img{
+        height: 90vh;
+      
+    }
+}
+
+@media (max-width : 375px) {
+    .landing .imglanding img{
+        height: 90vh;
+       
+    }
+}
+
+.navbar-container{
+    align-items: center;
+    margin: 0;
+}
+
+nav{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+nav h2{
+    margin: 0;
+    padding: 5px 0;
+}
+
+nav span{
+    font-weight: 500;
+}
+
+
+.mainSection{
+    position: relative;
+}
+
+.mainSection .gategore{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+.mainSection .catgoreNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 223, 223);
+}
+
+
+
+
+.form-select{
+    cursor: pointer;
+}
+
+
+/* جعل النافبار يظهر بشكل أفقي */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    width: 95%;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.navbar {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    width: 90%; /* حجم العرض */
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* إخفاء شريط التمرير */
+.navbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* روابط التنقل */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.nav-links li {
+    flex: 0 0 auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    background: white;
+    color: rgb(20, 30, 65);    
+    border-radius: 5px;
+    /* font-weight: bold; */
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: #2C3E50;
+    color: white;
+}
+
+
+/* section preackfast */
+
+
+.heading h3{
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: rgb(245, 245, 245);
+}
+
+.breakfastCard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+
+.breakfastCard .Card , 
+    .sanCard ,
+        .pasCard ,
+            .mainDishCard ,
+            .cocCard ,
+            .moCard{
+            background-color: #f8f9fa9e;
+            width: 90%;
+            height:130px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            display: flex;
+            transition: 0.3s;
+            
+}
+
+.softDrinks .breakfastCard .Card{
+    height:fit-content;
+}
+
+
+.sanCard .breakfastImg ,
+ .Card .breakfastImg ,
+    .pasCard .breakfastImg ,
+    .mainDishCard .breakfastImg,
+    .cocCard .breakfastImg ,
+    .moCard .breakfastImg{
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+}
+
+.Card .breakfastImg img ,
+ .sanCard .breakfastImg img ,
+    .pasCard .breakfastImg img,
+    .mainDishCard .breakfastImg img,
+    .cocCard .breakfastImg img ,
+    .moCard .breakfastImg img{
+        width: 100%;
+        height: 85%;
+        
+}
+.Card  .breakfastInfo ,
+    .sanCard .breakfastInfo ,
+    .pasCard .breakfastInfo ,
+    .mainDishCard .MainDishesInfo,
+    .cocCard .cocbreakfastInfo ,
+    .moCard .mobreakfastInfo{ 
+        width: 50%;
+        padding: 10px;
+}
+
+.sanCard .breakfastImg img,
+.pasCard .breakfastImg img,
+.mainDishCard .breakfastImg img ,
+.cocCard .breakfastImg img ,
+.moCard .breakfastImg img 
+    {
+        width: 150px;
+        height: 100%;
+}
+
+.steingpageproduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+}
+
+@media (min-width : 320px) {
+
+    .steingpageproduct{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .breckFast .breakfastCard .Card ,
+    .MainDishes .breakfastCard .Card {
+        height: 160px;
+        font-size: 14px;
+    }
+    .Sandwhiches .breakfastCard .Card ,
+    .Pasta .breakfastCard .Card{
+        height: 180px;
+        font-size: 14px;
+    }
+    .Burgers .breakfastCard .Card h4 ,
+    .MainDishes .breakfastCard .Card h4 ,
+    .softDrinks .breakfastCard .Card h4{
+        font-size: 17px;
+    }
+    .Appetizers .breakfastCard .Card h4,
+    .soup .breakfastCard .Card h4 ,
+    .Salad .breakfastCard .Card h4,
+    .Pizza .breakfastCard .Card h4,
+    .Coffee .breakfastCard .Card h4,
+    .Milkshake .breakfastCard .Card h4{
+        font-size: 19px;
+    }
+
+    .cocbreckFast .breakfastCard .Card,
+    .mojbreckFast .breakfastCard .Card{
+        font-size: 14px;
+        height: 175px;
+    }
+
+    .HotDrinks .breakfastCard .Card h4{
+        font-size: 16px;
+    }
+
+    .breckFast .breakfastCard .Card img ,
+    .Appetizers .breakfastCard .Card img,
+    .soup .breakfastCard .Card img,
+    .Salad .breakfastCard .Card img,
+    .Sandwhiches .breakfastCard .Card img,
+    .Hawawshi .breakfastCard .Card img,
+    .Pasta .breakfastCard .Card img,
+    .Pizza .breakfastCard .Card img,
+    .MainDishes .breakfastCard .Card img,
+    .Burgers .breakfastCard .Card img,
+    .HotDrinks .breakfastCard .Card img ,
+    .Coffee .breakfastCard .Card img ,
+    .Milkshake .breakfastCard .Card img ,
+    .IcedCoffee .breakfastCard .Card img ,
+    .Frappuccino .breakfastCard .Card img ,
+    .freshJuice .breakfastCard .Card img ,
+    .Smootheis .breakfastCard .Card img ,
+    .Yoghurt .breakfastCard .Card img ,
+    .cocbreckFast .breakfastCard .Card img ,
+    .mojbreckFast .breakfastCard .Card img ,
+    .Desserts .breakfastCard .Card img 
+    {
+        height: 100%;        
+    }
+}
+
+@media (min-width : 375px) {
+    .sanCard .breakfastImg img ,
+    .pasCard .breakfastImg img{
+        width: 140px;
+    }
+}
+
+@media (min-width : 425px) {
+    .sanCard .breakfastImg img ,
+    .pasCard .breakfastImg img{
+        width: 170px;
+    }
+}
+
+
+
+.Card  .breakfastInfo h4 ,
+ .sanCard .sanbreakfastInfo h4 ,
+    .pasCard .pasbreakfastInfo h4,
+    .mainDishCard .MainDishesInfo h4 ,
+    .cocCard .cocbreakfastInfo h4 ,
+    .moCard .mobreakfastInfo h4{
+        margin: 0;
+        padding: 10px 0;
+}
+
+.Card  .breakfastInfo p ,
+ .sanCard .sanbreakfastInfo p , 
+    .pasCard .pasbreakfastInfo p,
+    .mainDishCard .MainDishesInfo p ,
+    .cocCard .cocbreakfastInfo p ,
+    .moCard .mobreakfastInfo p{
+        font-weight: bold;
+        margin: 0;
+        padding: 0 0 10px 0;
+}
+
+
+
+.sanCard .sanbreakfastInfo .pinfo ,
+    .pasCard .pasbreakfastInfo .pinfo,
+    .mainDishCard .MainDishesInfo .maindishPinfo ,
+    .cocCard .cocbreakfastInfo .cocpinfo ,
+    .moCard .mobreakfastInfo .mopinfo{
+        color: #292929;
+        font-weight: 400;
+}
+
+.Card  .breakfastInfo span ,
+ .sanCard .sanbreakfastInfo span ,
+    .pasCard .pasbreakfastInfo span,
+    .mainDishCard .MainDishesInfo span ,
+    .cocCard .cocbreakfastInfo span ,
+    .moCard .mobreakfastInfo span{
+        font-weight: 400;
+        font-size: 13px;
+}
+
+
+.Card .breakfastInfo button ,
+ .sanCard .sanbreakfastInfo button ,
+    .pasCard .pasbreakfastInfo button,
+    .mainDishCard .MainDishesInfo button ,
+    .cocCard .cocbreakfastInfo button ,
+    .moCard .mobreakfastInfo button{
+        outline: none;
+        border-style: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: 0.5s;
+        background-color: rgb(20, 30, 65);
+        color: white;
+}
+
+@media (min-width : 320px) {
+    .MainDishes .breakfastInfo h4 ,
+    .cocCard .breakfastInfo h4 {
+        padding: 0 5px 10px 0;
+        font-size: 15px;
+    }
+
+    .MainDishes .breakfastInfo p , 
+    .cocCard .breakfastInfo p {
+        padding: 0 5px 10px 0;
+        font-size: 12px;
+    }
+    .MainDishes .breakfastInfo button{
+        padding: 4px 6px;
+    }
+}
+
+@media (min-width : 320px) {
+    .breckFast .conteaner .pinfo{
+        font-size: 15px;
+    }
+}
+
+
+.Card .breakfastInfo button:hover ,
+ .sanCard .sanbreakfastInfo button:hover ,
+    .pasCard .pasbreakfastInfo button:hover,
+    .mainDishCard .MainDishesInfo button:hover ,
+    .cocCard .cocbreakfastInfo button:hover ,
+    .moCard .mobreakfastInfo button:hover{
+        background-color: rgb(194, 192, 192);
+        color: #2C3E50;
+}
+
+.Card .breakfastInfo .pinfo ,
+ .sanCard .sanbreakfastInfo .sanpinfo ,
+    .pasCard .pasbreakfastInfo .paspinfo,
+    .mainDishCard .MainDishesInfo .maindishPinfo ,
+    .cocCard .cocbreakfastInfo .cocpinfo ,
+    .moCard .mobreakfastInfo .mopinfo{
+         display: none;
+}
+
+.Card .breakfastInfo .CloseredBtn ,
+ .sanCard .sanbreakfastInfo .sanCloseredBtn , 
+    .pasCard .pasbreakfastInfo .pasCloseredBtn,
+    .mainDishCard .MainDishesInfo .mianDishCloseredBtn ,
+    .cocCard .cocbreakfastInfo .cocCloseredBtn ,
+    .moCard .mobreakfastInfo .moCloseredBtn{
+        display: none;
+}
+
+
+section{
+    scroll-margin-top: 95px;
+}
+.soup ,
+ .Sandwhiches ,
+ .Burgers ,
+ .Hawawshi ,
+ .Pizza{
+    scroll-margin-top: 100px;
+}
+
+
+.dishbreakfastImg img{
+    width: 150px;
+    height: 120px;
+    padding: 5px;
+    
+}
+
+/* gest comment */
+.gestformconteaner{
+    width: 90%;
+    height: 90%;
+    margin: 10% auto;
+    background-color: #056f96;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.gestform input{
+    margin: 10px 0;
+}
+.gestform h3{
+    color: white;
+}
+.miansoftCard{
+    background-color: #f6f7f8;
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.softDrinks .breakfastCard .Card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.softDrinks .breakfastCard .Card p{
+    padding: 0;
+}
+
+.landing {
+    position: relative;
+}
+.landing .contact{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.356);
+    border-radius: 10px;
+}
+
+.landing .gestcommentbtn{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#commentsList{
+    display: none;
+}
+
+.cestpagecont{
+    display: none;
+}
+
+.cestpagecont h3{
+   text-align: center;
+   margin: 10px auto;
+}
+
+#backtomenu{
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 40px;
+}
+
+.landing  .setingIcon{
+    position: absolute;
+    width: 20px;
+    right: 8px;
+    top: 8px;
+}
+
+.landing  .setingIcon i{
+    color: white;
+    cursor: pointer;
+}
+
+.landing .contact p{
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+.landing .contact .pox{
+    width: 340px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.landing .contact .pox div{
+    margin: 5px 0 8px 0;
+    padding: 5px 10px;
+    background-color: #dadada;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0px 0px 9px 2px gray;
+    font-size: 12px;
+}
+
+.landing .contact .pox div i{
+    color: blue;
+    font-weight: bold;
+}
+.landing .contact .pox div .fa-instagram{
+    color: rgb(114, 4, 77);
+}
+
+.landing .contact .pox div a{
+    display: inline-block;
+    padding: 3px 6px;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    background-color: #e2e2e2;
+    direction: ltr;
+}
+
+footer .myinfo{
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+
+footer .myinfo h3{
+    margin: 0px;
+    padding: 15px 0 15px 0;
+    font-weight: 600;
+}
+
+footer .myinfo h4{
+    margin: 0px;
+    padding: 0px 10px 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer .myinfo .iconinfo{
+    display: flex;
+    justify-content: center;
+}
+footer .myinfo .iconinfo i{
+    font-size: 20px;
+    padding: 0 5px 0 5px;
+}
+
+.fa-linkedin{
+    color: blue;
+}
+
+.fa-whatsapp{
+    color: green;
+    font-weight: bolder;
+}
+
+.fa-envelope{
+    color: #2a9d8f;
+}
+
+.pest{
+    background-color: #e76f51;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px 0;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 1;
+    
+}
+
+.pest-porder{
+    border: 2px solid #e76f51;
+}
+
+
+
+
+.addnewitem ,
+.editeItemsec ,
+.setingpage  ,
+.seting{
+    display: none;
+}
+
+
+
+.scrollToTop{
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background-color: #2a9d8f;
+    transition: 0.3s;
+    display: none;
+}
+
+.scrollToTop:hover {
+    background-color: #0056b3;
+}
+
+
+
+#loginModal{
+    width: 90%;
+    margin: 30px auto;
+    background-color: #66abf4;
+    border-radius: 10px;
+    display: none;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #292929;
+    padding: 20px;
+    
+}
+
+.modal-content button , input {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    
+}
+
+section {
+    background-image: url("WhatsApp Image 2025-03-07 at 00.05.49_b4efdcb2.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-y;
+}
