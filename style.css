@@ -449,6 +449,9 @@ section{
     padding: 10px;
     border-radius: 5px;
     display: none;
+     background-image: url("WhatsApp Image 2025-03-07 at 00.05.49_b4efdcb2.jpg");
+    background-size: contain;
+    background-position: center;
 }
 
 .gestform{
