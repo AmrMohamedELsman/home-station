@@ -457,10 +457,17 @@ section{
 }
 
 .gestform input{
-    margin: 30px 0;
+    margin: 10px 0;
 }
 .gestform h3{
     color: white;
+}
+
+
+.gestform textarea{
+    margin-top: 10px;
+    width: 80%;
+    height: 150px;
 }
 
 .gestform button{
