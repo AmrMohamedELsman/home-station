@@ -20,39 +20,37 @@ rightBtn.addEventListener("click", () => {
 // view more logec
 
 document.querySelectorAll(".breakfastCard").forEach(ele => {
-    // إذا تم الضغط على زر "View more"
     ele.addEventListener("click", function(e) {
         if (e.target.classList.contains("redBtn")) {
-            let card = e.target.closest(".Card"); // الحصول على العنصر الأب (Card)
+            let card = e.target.closest(".Card");
             let pinfo = card.querySelector(".pinfo");
             let CloseredBtn = card.querySelector(".CloseredBtn");
             let readMoreBtn = card.querySelector(".redBtn");
 
+            // تطبيق تأثير التوسيع مع الأنيميشن
+            card.classList.add("expanded");
             readMoreBtn.style.display = "none";
             pinfo.style.display = "block";
             CloseredBtn.style.display = "block";
-            CloseredBtn.style.backgroundColor = "red";
-            CloseredBtn.style.color = "white";
-            card.style.height = "330px";  // تعديل ارتفاع الكارد
         }
 
-        // إذا تم الضغط على زر "Close"
         if (e.target.classList.contains("CloseredBtn")) {
-            let card = e.target.closest(".Card"); // الحصول على العنصر الأب (Card)
+            let card = e.target.closest(".Card");
             let pinfo = card.querySelector(".pinfo");
             let CloseredBtn = card.querySelector(".CloseredBtn");
             let readMoreBtn = card.querySelector(".redBtn");
 
-            pinfo.style.display = "none";
-            CloseredBtn.style.display = "none";
-            readMoreBtn.style.display = "block";
-            CloseredBtn.style.backgroundColor = "white";
-            CloseredBtn.style.color = "black";
-            card.style.height = "175px";  // تعديل ارتفاع الكارد
+            // إغلاق الكارد مع تأثير سلس
+            card.classList.remove("expanded");
+            setTimeout(() => {
+                pinfo.style.display = "none";
+                CloseredBtn.style.display = "none";
+                readMoreBtn.style.display = "block";
+            }, 400); // الانتظار حتى ينتهي الأنيميشن قبل إخفاء المحتوى
         }
-    })
-})
-    
+    });
+});
+
 
 
 
@@ -136,21 +134,6 @@ allLinks.forEach(link => {
         }
     });
 });
-
-
-
-
-//     // دالة علشان نحول الصورة لـ Data URL
-//     function readImageFile(file, callback) {
-//         const reader = new FileReader();
-//         reader.onload = function(e) {
-//             callback(e.target.result); // بنرجع الـ Data URL
-//         };
-//         reader.readAsDataURL(file); // بنقرأ الملف
-//     }
-    
-
-
 
 
 
@@ -655,7 +638,6 @@ loginButton.addEventListener("click", () => {
             }
 
             if (username === adminData.username && password === adminData.password) {
-                alert("✅ Login successful!");
                 loginModal.style.display = "none";
                 settingPage.style.display = "block";
             } else {
